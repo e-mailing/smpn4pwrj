@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arsip Surat Keluar</title>
+  <title>Arsip Dokumen</title>
   <!-- Favicon -->
   <link rel="icon" href="https://arsip.smknbansari.sch.id/file/icon.png" type="image/x-icon">
   <!-- Bootstrap CSS -->
@@ -55,7 +55,7 @@
 
   if (id) {
     // Menentukan URL iframe dengan parameter id saja
-    var iframeSrc = 'https://script.google.com/macros/s/AKfycbwuxVJXsuRhwNoxH7yzjrLeEBm6YZR5SnkquV0Uyl57g_HTKtaVTcBXnNmUfvnrRPtQ/exec?id=' + encodeURIComponent(id);
+    var iframeSrc = 'https://script.google.com/a/macros/smknbansari.sch.id/s/AKfycbw0IW89Al8rDhQlfSfAM0opxTGwWLsuO-T7Nog94b0CjJhWGHSseED85R_KiqF2Sdk/exec?page=doc&id=' + encodeURIComponent(id);
 
     // Set URL iframe
     document.getElementById('myIframe').src = iframeSrc;
@@ -66,7 +66,7 @@
   }
 
   // Mengubah judul halaman menjadi statis karena hanya satu parameter id yang perlu ditangani
-  document.getElementById('pageTitle').textContent = 'E-Mailing | Surat Keluar';
+  document.getElementById('pageTitle').textContent = 'E-Arsip';
 </script>
 
 
